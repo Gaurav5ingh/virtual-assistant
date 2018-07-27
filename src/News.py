@@ -23,7 +23,7 @@ def news_headlines():
         
     soup = BeautifulSoup(page,"xml")
     news_list = soup.findAll("item")
-    # Print news title, url and publish date
+    # Print news title and url
     for news in news_list:
         print(news.title.text)
         #print(news.link.text)
