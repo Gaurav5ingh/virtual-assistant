@@ -1,4 +1,4 @@
-from G_search_url import get_url
+from Get_search_url import get_url
 import webbrowser
 from Voice import talk
 from MyCommand import myCommands 
