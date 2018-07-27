@@ -1,6 +1,6 @@
 from pytube import YouTube
 import webbrowser
-from G_search_url import get_url
+from Get_search_url import get_url
 
 def video_dwnld():
 
