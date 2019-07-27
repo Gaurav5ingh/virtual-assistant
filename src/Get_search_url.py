@@ -14,12 +14,12 @@ def get_url(query):
 
     if  check.status_code == 200:
         url = "https://www.google"+tld+"/search?q=" + query
-        page = requests.get(url)
         
     else:
         url = "https://www.google"+".co"+tld+"/search?q=" + query
-        page = requests.get(url)
-
+    
+    page = requests.get(url)
+       
     soup = BeautifulSoup(page.content,'lxml')
 
     for link in soup.find_all("a",href=re.compile("(?<=/url\?q=)(htt.*://.*)")):
