@@ -1,5 +1,5 @@
 import webbrowser
-from G_search_url import get_url
+from Get_search_url import get_url
 #from selenium.webdriver import Firefox
 #from selenium.webdriver.firefox.options import Options
 
